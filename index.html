@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simp |找到或是成為最棒的工具人</title>
+    <!-- adding font from google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main style="width: 100%; display: flex">
+    <!-- sidebar -->
+    <div class="sidebar">
+        <h1 class="logo">Simp.com</h1>
+        <div class="menus">
+            <a href="#"><ion-icon name="home-outline"></ion-icon>首頁</a>
+            <a href="#"><ion-icon name="newspaper-outline"></ion-icon>搜尋臨時職缺</a>
+            <a href="#"><ion-icon name="alarm-outline"></ion-icon>我的工作排程</a>
+            <a href="#"><ion-icon name="bookmarks-outline"></ion-icon>我刊登的職缺</a>
+            <a href="#"><ion-icon name="mail-unread-outline"></ion-icon>訊息</a>
+            <a href="#"><ion-icon name="ribbon-outline"></ion-icon></ion-icon>查看我的評價</a>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon>設定</a>
+        </div>
+        <div class="profile">
+            <img class="profile-img" src="images/profile.jpg">
+            <div class="profie-name">
+                <h4>User 1</h4>
+            </div>
+            <button calss="profile-button">登出</button>
+        </div>
+    </div>
+    <!-- main -->
+    <div class="main">
+        <div class="main-header">
+            <ion-icon class="menu-bar" name="menu-outline"></ion-icon>
+            <div class="search">
+                <input type="text" placeholder="在此搜尋最佳職缺．．．">
+                <input type="text" placeholder="根據郵遞區號進行搜尋．．．">
+                <button class="btn-search"><ion-icon name="search-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="sort">
+            <p>Sort</p>
+            <div class="sort-list">
+                <select>
+                    <option value="0">All</option>
+                    <option value="1">Latest Post</option>
+                    <option value="2">Oldest Post</option>
+                    <option value="3">Hightest Paid</option>
+                    <option value="4">Closest Distance</option>
+                </select>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="card">
+                <div class="card-left blue-bg">
+                    <img src="images/wehelp_log.png">
+                </div>
+                <div class="card-center">
+                    <h3>搬家人員</h3>
+                    <p class="card-detail">徵求臨時搬家人員</p>
+                    <p class="card-loc"><ion-icon name="location-outline"></ion-icon>241 三重區</p>
+                    <div class="card-sub">
+                        <p><ion-icon name=today-outline> </ion-icon>11/06/2023</p>
+                        <p><ion-icon name=people-outline> </ion-icon>3 人</p>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <div class="card-tag">
+                        <h5>工作或交件時間</h5>
+                        <p><ion-icon name=today-outline></ion-icon>11/11/2023</p>
+                        <p><ion-icon name="briefcase-outline"></ion-icon>08:00 - 12:00</p>
+                    </div>
+                    <div class="card-salary">
+                        <p><b>報酬</b><span class="card-salary-font">1200 元</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="detail">
+        <ion-icon class="close-detail" name="close-outline"></ion-icon>
+        <div class="detail-header">
+            <h2>搬家人員</h2>
+        </div>
+        <hr class="divider">
+        <div class="detail-desc">
+            <div class="about">
+                <h4>About company</h4>
+                <p>132</p>
+                <a href="#">Read more</a>
+            </div>
+            <hr class="divider">
+            <div class="qualification">
+                <h4>Qualification</h4>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>   
+        </div>
+        <hr class="divider">
+        <div class="detail-btn">
+            <button class="btn-apply">Apply now</button>
+            <button class="btn-save">Save Job</button>
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="footer_text">COPYRIGHT &copy; 2021 台北一日遊</div>
+    </footer>
+</body>
+<!-- adding icon from ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- adding library jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="app.js"></script>
+</html>
