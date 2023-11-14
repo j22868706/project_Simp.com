@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simp |找到或是成為最棒的工具人</title>
+    <!-- adding font from google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/application.css') }}">
+</head>
+<body>
+    <main style="width: 100%; display: flex;">
+    <!-- sidebar -->
+        <div class="sidebar">
+            <h1 id="returnIndex" class="logo">Simp.com</h1>
+            <div class="menus">
+                <a href="#" class="menu_fanpage"><ion-icon name="people-outline"></ion-icon>會員頁面</a>
+                <a href="#" class="menu_post"><ion-icon name="newspaper-outline"></ion-icon>刊登職缺</a>
+                <a href="#" class="menu_message"><ion-icon name="mail-unread-outline"></ion-icon>我的訊息</a>
+                <a href="#" class="menu_schedule"><ion-icon name="alarm-outline"></ion-icon>我的工作排程</a>
+                <a href="#" class="menu_mypost"><ion-icon name="bookmarks-outline"></ion-icon>我刊登的職缺</a>
+                <a href="#" class="menu_favorite"><ion-icon name="settings-outline"></ion-icon>我收藏的職缺</a>
+                <a href="#" class="menu_logout"><ion-icon name="log-out-outline"></ion-icon>登出</a>
+            </div>
+        </div>
+        <div class="main">
+            <section class="container">
+                <header>刊登職缺</header>
+                <form class="form" id="postJob" >
+                    <div class="input_box">
+                        <label>工作職稱</label>
+                        <input type="text" placeholder="請輸入工作職稱" required id="jobTitle" name="jobTitle">
+                    </div>
+                    <div class="input_box">
+                        <label>工作內容</label>
+                        <input type="text" placeholder="請輸入工作內容" required id="jobDetail" name="jobDetail">
+                    </div>
+                    <div class="input_box">
+                        <label>工作日期</label>
+                        <input type="date" placeholder="請輸入工作日期" required id="jobDate" name="jobDate">
+                    </div>
+                    <div class="column">
+                        <div class="input_box">
+                            <label>開始工作時間</label>
+                            <input type="time" placeholder="FROM" required id="jobStartTime" name="jobStartTime">
+                        </div>
+                        <div class="input_box">
+                            <label>結束工作時間</label>
+                            <input type="time" placeholder="FROM" required id="jobEndTime" name="jobEndTime">
+                        </div>
+                    </div>
+                    <div class="input_box">
+                        <label>工作地點</label>
+                        <div class="column">
+                            <div class="input_box">
+                                <input type="text" placeholder="請輸入郵遞區號" required id="jobZipcode" name="jobZipcode">
+                            </div>
+                            <div class="input_box">
+                                <input type="text" placeholder="請輸入縣市名稱及鄉鎮市名稱" required id="jobCity" name="jobCity">
+                            </div>
+                        </div>
+                        <input type="text" placeholder="請輸入工作地點" required id="jobLocation" name="jobLocation">
+                    </div>
+                    <div class="input_box">
+                        <label>薪資及發放方式</label>
+                        <input type="text" placeholder="請輸入薪資金額" pattern="[0-9]+" title="薪資金額只能包含數字" required id="jobSalary" name="jobSalary">
+                    </div>
+                    <div class="input_box">
+                        <label>其他補充</label>
+                        <input type="text" placeholder="其他補充資訊" required id="jobOthers" name="jobOthers">
+                    </div>
+                    <div class="message_box"></div>
+                    <button onclick="submitPostJob(event)">刊登工作</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer_text">COPYRIGHT &copy; Simp.Com</div>
+    </footer>
+</body>
+<!-- adding icon from ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- adding library jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{{ url_for('static', filename= 'javaScript/sidebar.js')}}"></script>
+<script src="{{ url_for('static', filename= 'javaScript/application.js')}}"></script>
+</html>

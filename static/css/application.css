@@ -32,7 +32,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
     padding: 2rem;
     background-color: var(--primaryColor);
     color: var(--whiteColor);
@@ -44,9 +43,12 @@ body{
     letter-spacing: 3px;
     text-align: center;
     cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 40px;
 }
 
 .menus {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -105,23 +107,126 @@ body{
 }
 
 .main {
-    width: calc(100% - 20% - 25%);
+    width: 80%;
     min-height: 100%;
     min-width: 300px;
     height: max-content;
     display: flex;
-    flex-direction: column;
-    padding: 2rem 2%;
-    margin-left: 20%;
-    background-color: var(--whiteColor);
-    z-index: 1;
+    margin-left: auto;
+    align-items: self-start;
+    justify-content: center;
+    margin-top: 30px;
 }
 
-.main-header{
+.container{
+    position: relative;
+    max-width: 1200px;
+    width: 80%;
+    max-height: 600px;
+    overflow: auto;
+    background-color: var(--whiteColor);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--greyColor);
+    box-shadow: var(--blackColor);
+}
+
+.container header{
+    font-size: 1.5rem;
+    color: var(--fontColor);
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .input_box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input_box .label {
+    color: var(--fontColor);
+}
+
+.form :where(.input_box input, .select_box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--greyColor);
+    border-radius: 6px;
+    color: var(--fontColor);
+    font-size: 1rem;
+    margin-top: 8px;
+    padding: 0 15px;
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .gender_box {
+    margin-top: 20px;
+}
+
+.gender_box h3 {
+    color:var(--fontColor);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.form :where(.gender_option, .gender) {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    column-gap: 50px;
+    flex-wrap: wrap;
 }
+
+.form .gender {
+    column-gap: 5px;
+}
+
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+
+.addres :where(input, .select_box) {
+    margin-top: 15px;
+}
+
+.select_box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: var(--fontColor);
+    font-size: 1rem;
+}
+
+.form button {
+    height: 55px;
+    width: 100%;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 400;
+    padding: 10px 20px;
+}
+
+.form button:hover {
+    border: 1px solid var(--primaryColor);
+    background-color: transparent;
+    color: var(--primaryColor);
+}
+
 
 /* hide menu-bar */
 .menu-bar {
@@ -380,26 +485,21 @@ body{
     color:var(--fontColor);
 }
 
-@media (max-width: 1200px) {
-    .menu-bar {
-        display: block;
-        cursor: pointer;
-    }
-    .sidebar {
-        display: none;
-    }
-    .main {
-        width: calc(100% - 40%);
-        margin-left: 0;
-    }
-    .detail {
-        width: 40%;
-    }
+.message_box {
+    text-align: center; 
+    font-size: 1rem; 
+    margin: 10px 15px 0px 15px;
+    padding: 10px 15px;
+    color: var(--redColor);
+    /* display: none;  */
 }
 
 @media (max-width: 600px) and (min-width: 360px) {
     .main {
         width: 100%;
+    }
+    .sidebar {
+        display: none;
     }
     .detail {
         width: none;
