@@ -23,6 +23,9 @@ function submitPostJob(event) {
         } else {
             resultMessageBox.style.color = "green";
             resultMessageBox.style.display = "block";
+            setTimeout(function () {
+                window.location.href = '/application';
+            }, 3000); // 3000 milliseconds = 3 seconds
         }
     })
     .catch((error) => {
@@ -30,4 +33,10 @@ function submitPostJob(event) {
     });
 }
 
-
+function checkToken (){
+    const checkToken = localStorage.getItem("token");
+    if (!checkToken) {
+        window.location.href = '/'; }
+    }
+    
+    window.addEventListener('load', checkToken);

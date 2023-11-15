@@ -93,7 +93,7 @@ function submitSigninForm(signinEvent) {
         })
         .then((response) => response.json())
         .then((data) => {
-            const signinMessageBox = document.querySelector(".signin-message-box");
+            const signinMessageBox = document.querySelector(".signin_message_box");
             if (data.error) {
                 signinMessageBox.style.color = "red";
                 signinMessageBox.style.display = "block";

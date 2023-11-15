@@ -35,9 +35,15 @@
                         <label>工作內容</label>
                         <input type="text" placeholder="請輸入工作內容" required id="jobDetail" name="jobDetail">
                     </div>
-                    <div class="input_box">
-                        <label>工作日期</label>
-                        <input type="date" placeholder="請輸入工作日期" required id="jobDate" name="jobDate">
+                    <div class="column">
+                        <div class="input_box">
+                            <label>需求人數</label>
+                            <input type="text" placeholder="請輸入需求人數" required id="numberOfJobPositions" name="numberOfJobPositions">
+                        </div>
+                        <div class="input_box">
+                            <label>工作日期</label>
+                            <input type="date" placeholder="請輸入工作日期" required id="jobDate" name="jobDate">
+                        </div>
                     </div>
                     <div class="column">
                         <div class="input_box">
@@ -61,13 +67,23 @@
                         </div>
                         <input type="text" placeholder="請輸入工作地點" required id="jobLocation" name="jobLocation">
                     </div>
-                    <div class="input_box">
-                        <label>薪資及發放方式</label>
-                        <input type="text" placeholder="請輸入薪資金額" pattern="[0-9]+" title="薪資金額只能包含數字" required id="jobSalary" name="jobSalary">
+                    <div class="column">
+                        <div class="input_box">
+                            <label>薪資金額</label>
+                            <input type="text" placeholder="請輸入薪資金額" pattern="[0-9]+" title="薪資金額只能包含數字" required id="jobSalary" name="jobSalary">
+                        </div>
+                        <div class="input_box">
+                            <label>支薪方式</label>
+                            <input type="text" placeholder="請輸入支薪方式" required id="paymentMethod" name="paymentMethod">
+                        </div>
+                        <div class="input_box">
+                            <label>發薪日</label>
+                            <input type="text" placeholder="請輸入發薪日" required id="payDate" name="payDate">
+                        </div>
                     </div>
                     <div class="input_box">
                         <label>其他補充</label>
-                        <input type="text" placeholder="其他補充資訊" required id="jobOthers" name="jobOthers">
+                        <input type="text" placeholder="請輸入其他補充資訊" required id="jobOthers" name="jobOthers">
                     </div>
                     <div class="message_box"></div>
                     <button onclick="submitPostJob(event)">刊登工作</button>

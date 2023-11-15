@@ -46,30 +46,30 @@
                 </select>
             </div>
         </div>
-        <div class="wrapper">
-            <div class="card">
-                <div class="card-left blue-bg">
+        <div class="wrapper" id="job_list">
+            <!-- <div class="card"> -->
+                <!-- <div class="card-left blue-bg">
                     <img src="static/images/wehelp_log.png">
                 </div>
                 <div class="card-center">
-                    <h3>搬家人員</h3>
-                    <p class="card-detail">徵求臨時搬家人員</p>
-                    <p class="card-loc"><ion-icon name="location-outline"></ion-icon>241 三重區</p>
+                    <h3 id="job_title">搬家人員</h3>
+                    <p id="job_description" class="card-detail">徵求臨時搬家人員</p>
+                    <p class="card-loc" id="job_location"><ion-icon name="location-outline"></ion-icon>241 三重區</p>
                     <div class="card-sub">
-                        <p><ion-icon name=today-outline> </ion-icon>11/06/2023</p>
-                        <p><ion-icon name=people-outline> </ion-icon>3 人</p>
+                        <p><ion-icon name=today-outline></ion-icon>11/06/2023</p>
+                        <p><ion-icon name=people-outline></ion-icon>3 人</p>
                     </div>
                 </div>
                 <div class="card-right">
                     <div class="card-tag">
                         <h5>工作或交件時間</h5>
-                        <p><ion-icon name=today-outline></ion-icon>11/11/2023</p>
+                        <p id="job_date"><ion-icon name=today-outline></ion-icon>11/11/2023</p>
                         <p><ion-icon name="briefcase-outline"></ion-icon>08:00 - 12:00</p>
                     </div>
                     <div class="card-salary">
                         <p><b>報酬</b><span class="card-salary-font">1200 元</span></p>
-                    </div>
-                </div>
+                    </div> -->
+                <!-- </div> -->
             </div>
         </div>
     </div>
@@ -81,19 +81,29 @@
         <hr class="divider">
         <div class="detail-desc">
             <div class="about">
-                <h4>About company</h4>
+                <h4>關於雇主</h4>
                 <p>132</p>
                 <a href="#">Read more</a>
             </div>
             <hr class="divider">
             <div class="qualification">
-                <h4>Qualification</h4>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                </ul>
+                <h4>工作詳細資訊</h4>
+                <div class="qSubTitle">工作內容</div>
+                <div class="qcontent" id="qContent"></div>
+                <div class="qSubTitle">工作地點</div>
+                <div class="qcontent" id="qLocation"></div>
+                <div class="qSubTitle">支薪方式</div>
+                <div class="qcontent" id="qPayMethod"></div>
+                <div class="qSubTitle">支薪日</div>
+                <div class="qcontent" id="qPayDate"></div>
+                <div class="qSubTitle">工作日期</div>
+                <div class="qcontent" id="qWorkingDate"></div>
+                <div class="qSubTitle">工作時間</div>
+                <div class="qcontent" id="qWorkingHour"></div>
+                <div class="qSubTitle">需求人數</div>
+                <div class="qcontent" id="qNumPosition"></div>
+                <div class="qSubTitle">其他備註</div>
+                <div class="qcontent" id="qOthers"></div>
             </div>   
         </div>
         <hr class="divider">

@@ -306,6 +306,16 @@ body{
     margin-bottom: 4px;
 }
 
+.qSubTitle {
+    font-size: 15px;
+    color: var(--blackColor);
+    margin: 5px 0;
+}
+.qcontent {
+    font-size: 13px;
+    color: var(--darkGreyCorlor);
+}
+
 .detail-desc {
     line-height: 1.5;
 }

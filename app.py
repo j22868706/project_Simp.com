@@ -5,6 +5,8 @@ from collections import OrderedDict
 import jwt
 import datetime
 from datetime import datetime as dt_datetime 
+from datetime import datetime as posttime 
+
 import requests
 from jwt import ExpiredSignatureError, InvalidTokenError
 
@@ -123,6 +125,49 @@ def authenticate_token(f):
 def user_auth(current_user):
     return jsonify(data=current_user)
 
+@app.route("/api/jobPost", methods=["GET"])
+def getJobPost():
+    con = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="root1234",
+    database="simp"
+    )
+
+    cursor = con.cursor()
+    query = "SELECT * FROM jobs"
+    cursor.execute(query)
+
+
+    result = cursor.fetchall()
+
+        # Convert the result to a list of dictionaries for JSON serialization
+    job_posts = []
+    for row in result:
+        job_post = {
+            'job_title': row[2],
+            'job_description': row[3],
+            'job_date':row[4],
+            'job_start_time':row[5],
+            'job_end_time':row[6],
+            'job_zipcode':row[7],
+            'job_city':row[8],
+            'job_location':row[9],
+            'job_salary':row[10],
+            'job_others':row[11],
+            'number_of_job_positions':row[12],
+            'post_time':row[13],
+            'pay_date':row[14],
+            'pay_method':row[15]
+        }
+        job_posts.append(job_post)
+
+    # Close the database connection
+    cursor.close()
+    con.close()
+
+    # Return the result as JSON
+    return jsonify(job_posts)
 
 
 
@@ -145,6 +190,14 @@ def updateJobPost():
     jobLocation = request.form["jobLocation"]
     jobSalary = request.form["jobSalary"]
     jobOthers = request.form["jobOthers"]
+    payDates = request.form["payDate"]
+    paymentMethod = request.form["paymentMethod"]
+    numberOfJobPositions = request.form["numberOfJobPositions"]
+    # Format to get only the year, month, and day
+    current_time = posttime.now()
+    formatted_date = current_time.strftime("%Y-%m-%d")
+    postTime = formatted_date 
+    
 
     cursor = con.cursor()
 
@@ -162,8 +215,8 @@ def updateJobPost():
         user_email = token_user_info['email']
 
         # Insert the job post into the database
-        cursor.execute("INSERT INTO jobs (memberEmail, title, detail, jobDate, start_time, end_time, zipcode, city, location, salary, jobOthers) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
-                       (user_email, jobTitle, jobDetail, jobDate, jobStartTime, jobEndTime, jobZipcode, jobCity, jobLocation, jobSalary, jobOthers))
+        cursor.execute("INSERT INTO jobs (memberEmail, title, detail, jobDate, start_time, end_time, zipcode, city, location, salary, jobOthers, numberOfJobPositions, postTime, payDates, paymentMethod) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s , %s, %s, %s, %s)",
+                       (user_email, jobTitle, jobDetail, jobDate, jobStartTime, jobEndTime, jobZipcode, jobCity, jobLocation, jobSalary, jobOthers, numberOfJobPositions, postTime, payDates, paymentMethod))
         con.commit()
         con.close()
 
