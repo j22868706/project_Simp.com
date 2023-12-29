@@ -51,16 +51,15 @@ Simp.com is a dynamic job site scailitating efficient job posting for employers 
 * **Test Account** : 
 
   |-|-|
-  | ------ | ------ |
-  | E-mail | test01@gmail.com |
-  | Password | test01 |
-* **Testing Credit Card Information - TapPay**:
+  | User 1 | ------ |
+  | E-mail | aaa@aaa.com |
+  | Password | aaaaaa |
 
   |-|-|
-  | ------ | ------ |
-  | Card Number | 4242-4242-4242-4242 |
-  | Expiration Date | 01/45 |
-  | CVV | 123 |
+  | User 2 | ------ |
+  | E-mail | test002@gmail.com |
+  | Password | test002 |
+
 
 ## Features <a name= "features"></a>
 
