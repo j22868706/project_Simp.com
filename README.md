@@ -51,13 +51,11 @@ Simp.com is a dynamic job site scailitating efficient job posting for employers 
 * **Test Account** : 
 
   |-|-|
-
   | ------ | ------ |
   | E-mail | aaa@aaa.com |
   | Password | aaaaaa |
 
   |-|-|
-
   | ------ | ------ |
   | E-mail | test002@gmail.com |
   | Password | test002 |
