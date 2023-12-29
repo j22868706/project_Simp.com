@@ -81,7 +81,7 @@ Simp.com is a dynamic job site scailitating efficient job posting for employers 
 
 ### Implemented payment request API using TapPay
 
-<img src="https://github.com/j22868706/taipeiDayTrip/blob/main/demo/Third%20party%20online%20payment%20-%20TapPay%20(1).gif">
+<img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Socket.io.gif" width="800" length="800">
 
 ## Future of Scope <a name= "future_scope"></a>
  - integrate features to manage order and membership systems.
