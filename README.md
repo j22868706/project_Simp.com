@@ -30,6 +30,15 @@ Simp.com is a dynamic job site scailitating efficient job posting for employers 
 <a href="https://www.docker.com/">
   <img src="https://www.docker.com/wp-content/uploads/2023/08/logo-dont-reverse.svg" alt="Docker" width="100">
 </a>
+<a href="https://gunicorn.org/">
+  <img src="https://static-00.iconduck.com/assets.00/gunicorn-icon-512x311-a5lsx3on.png" alt="Gunicorn" width="100">
+</a>
+<a href="https://www.nginx.com/">
+  <img src="https://1000logos.net/wp-content/uploads/2020/08/Nginx-Symbol.jpg" alt="Gunicorn" width="100">
+</a>
+<a href="https://www.nginx.com/">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Socket-io.svg/1200px-Socket-io.svg.png" alt="Gunicorn" width="100">
+</a>
 
 ## Architecture Diagram <a name = "architecture_diagram">
 <img src="https://github.com/j22868706/taipeiDayTrip/blob/main/demo/Architecture%20Diagram.png" alt="architecture diagram" width="500" height ="500">
