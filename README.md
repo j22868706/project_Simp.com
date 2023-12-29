@@ -41,10 +41,10 @@ Simp.com is a dynamic job site scailitating efficient job posting for employers 
 </a>
 
 ## Architecture Diagram <a name = "architecture_diagram">
-<img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Architecture%20Diagram.png" alt="architecture diagram" >
+<img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Architecture%20Diagram.png" alt="architecture diagram" width="700" >
 
 ## Database Schema <a name = "database_schema">
-<img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Database%20Scheme.png" alt="database schema"  >
+<img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Database%20Scheme.png" alt="database schema" width="700" >
 
 ## Demo <a name = "demo"></a>
 * **Website URL** : [Simp.com](https://bootcamp.may11th2023.com/))
