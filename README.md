@@ -63,23 +63,35 @@ Simp.com is a dynamic job site scailitating efficient job posting for employers 
 
 ## Features <a name= "features"></a>
 
-### Infinite Scroll
+### Sign in and Sign up
 
-<img src="https://github.com/j22868706/taipeiDayTrip/blob/main/demo/Infinite%20Scroll.gif" >
-
-### Slideshow / Carousel
-
-<img src="https://github.com/j22868706/taipeiDayTrip/blob/main/demo/Slideshow%20_%20Carousel%20(1).gif">
+<img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/signin%20(1).gif" >
 
 ### Using JWT (JSON Web Tokens) to authorize users and protect API routes
 
-<img src="https://github.com/j22868706/taipeiDayTrip/blob/main/demo/Authentication.gif" >
+<img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Autho%20(1).gif" >
 
-### Booking system
+### Keywords
 
-<img src="https://github.com/j22868706/taipeiDayTrip/blob/main/demo/booking%20(1).gif">
+<img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Keywords%20(1).gif" >
 
-### Implemented payment request API using TapPay
+### Zipcode
+
+<img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Zipcode%20(1).gif" >
+
+### Post job
+
+<img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/postjob%20(1).gif">
+
+### Apply system
+
+<img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Apply%20(1).gif" >
+
+### Membership system
+
+<img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/membership%20(1).gif">
+
+### Socket.io
 
 <img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Socket.io%20(1).gif">
 
