@@ -22,7 +22,7 @@ Simp.com is a dynamic job site scailitating efficient job posting for employers 
   <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" alt="CSS" width="100">
 </a>
 <a href="https://example.com/js">
-  <img src="https://camo.githubusercontent.com/999ac61673796a0151eef10879275094b94e4cdf8633a61c01819c6504dcb6d9/68747470733a2f2f7261772e6769746875622e636f6d2f766f6f646f6f74696b69676f642f6c6f676f2e6a732f6d61737465722f6a732e706e67" alt="javascript" width="100">
+  <img src="https://camo.githubusercontent.com/b947ecd399acb03f04930f05a335515263f66d21fd672428577c88d4593848e5/68747470733a2f2f7261772e6769746875622e636f6d2f766f6f646f6f74696b69676f642f6c6f676f2e6a732f6d61737465722f6a732e706e67" alt="javascript" width="100">
 </a>
 <a href="https://flask.palletsprojects.com/en/3.0.x/">
   <img src="https://repository-images.githubusercontent.com/596892/cc2c69ec-9251-4b33-8283-b86a8659c9cb" alt="Flask" width="100">
