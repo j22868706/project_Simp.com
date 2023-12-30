@@ -63,19 +63,23 @@ Simp.com is a dynamic job site scailitating efficient job posting for employers 
 
 ## Features <a name= "features"></a>
 
-### Sign in and Sign up
+### Sign-In Page and Sign-Up Page
+ - Use JavaScript to validate user input on the Sign-Up Page and Sign-In Page.
+ - Query the database to check for duplicate email addresses.
 
 <img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/signin%20(1).gif" >
 
-### Using JWT (JSON Web Tokens) to authorize users and protect API routes
+### Authorization
+ - Using JWT (JSON Web Tokens) to authorize users and protect API routes
 
 <img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Autho%20(1).gif" >
 
-### Keywords
+### Search by Keyword function
 
 <img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Keywords%20(1).gif" >
 
-### Zipcode
+### Search by Keyword Zipcode
+ - Using the library twzipcode.js to generate postal code.
 
 <img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Zipcode%20(1).gif" >
 
@@ -83,20 +87,24 @@ Simp.com is a dynamic job site scailitating efficient job posting for employers 
 
 <img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/postjob%20(1).gif">
 
-### Apply system
+### Apply Page
 
 <img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Apply%20(1).gif" >
 
-### Membership system
+### Membership Page
+ - The feature allows users to update their icon, username, and password seamlessly using Amazon S3, CloudFront, and RDS.
 
 <img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/membership%20(1).gif">
 
-### Socket.io
+### Real-time chat with users | Socket.io
+ - Built a real-time chat application using Socket.IO, enabling communication between employers and employees.
 
 <img src="https://github.com/j22868706/project_Simp.com/blob/main/demo/Socket.io%20(1).gif">
 
 ## Future of Scope <a name= "future_scope"></a>
- - integrate features to manage order and membership systems.
+ - Optimize the real-time chat interface to enhance the user experience.
+ - Implement additional features such as the ability to delete job postings and manage expired or filled positions.
+ - Implement an evaluation system that allows users to provide feedback and ratings for a more interactive and user-driven experience."
 
 ## Contact <a name="contact">
 
